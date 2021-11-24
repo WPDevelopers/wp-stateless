@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'UsabilityDynamics\\Job' => $vendorDir . '/udx/lib-utility/lib/class-job.php',
     'UsabilityDynamics\\Loader' => $vendorDir . '/udx/lib-utility/lib/class-loader.php',
     'UsabilityDynamics\\Settings' => $vendorDir . '/udx/lib-settings/lib/class-settings.php',
@@ -42,6 +43,7 @@ return array(
     'wpCloud\\StatelessMedia\\CompatibilityWooExtraProductOptions' => $baseDir . '/lib/classes/compatibility/woo-extra-product-options.php',
     'wpCloud\\StatelessMedia\\Divi' => $baseDir . '/lib/classes/compatibility/divi.php',
     'wpCloud\\StatelessMedia\\DynamicImageSupport' => $baseDir . '/lib/classes/compatibility/dynamic-image-support.php',
+    'wpCloud\\StatelessMedia\\EAEL' => $baseDir . '/lib/classes/compatibility/essential-addons.php',
     'wpCloud\\StatelessMedia\\EDDDownloadMethod' => $baseDir . '/lib/classes/compatibility/easy-digital-downloads.php',
     'wpCloud\\StatelessMedia\\EWWW' => $baseDir . '/lib/classes/compatibility/ewww.php',
     'wpCloud\\StatelessMedia\\Elementor' => $baseDir . '/lib/classes/compatibility/elementor.php',

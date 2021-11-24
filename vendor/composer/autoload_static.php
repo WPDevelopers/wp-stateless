@@ -43,6 +43,7 @@ class ComposerStaticInitc59d002476a452800baaf79c430753cb
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'UsabilityDynamics\\Job' => __DIR__ . '/..' . '/udx/lib-utility/lib/class-job.php',
         'UsabilityDynamics\\Loader' => __DIR__ . '/..' . '/udx/lib-utility/lib/class-loader.php',
         'UsabilityDynamics\\Settings' => __DIR__ . '/..' . '/udx/lib-settings/lib/class-settings.php',
@@ -79,6 +80,7 @@ class ComposerStaticInitc59d002476a452800baaf79c430753cb
         'wpCloud\\StatelessMedia\\CompatibilityWooExtraProductOptions' => __DIR__ . '/../..' . '/lib/classes/compatibility/woo-extra-product-options.php',
         'wpCloud\\StatelessMedia\\Divi' => __DIR__ . '/../..' . '/lib/classes/compatibility/divi.php',
         'wpCloud\\StatelessMedia\\DynamicImageSupport' => __DIR__ . '/../..' . '/lib/classes/compatibility/dynamic-image-support.php',
+        'wpCloud\\StatelessMedia\\EAEL' => __DIR__ . '/../..' . '/lib/classes/compatibility/essential-addons.php',
         'wpCloud\\StatelessMedia\\EDDDownloadMethod' => __DIR__ . '/../..' . '/lib/classes/compatibility/easy-digital-downloads.php',
         'wpCloud\\StatelessMedia\\EWWW' => __DIR__ . '/../..' . '/lib/classes/compatibility/ewww.php',
         'wpCloud\\StatelessMedia\\Elementor' => __DIR__ . '/../..' . '/lib/classes/compatibility/elementor.php',

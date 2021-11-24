@@ -63,6 +63,11 @@ namespace wpCloud\StatelessMedia {
       new Elementor();
 
       /**
+       * Essential Addons for Elementor
+       */
+      new EAEL();
+
+      /**
        * EWWW Image Optimizer
        */
       new EWWW();
