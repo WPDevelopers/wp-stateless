@@ -47,7 +47,7 @@ class StorageClient
     use ArrayTrait;
     use ClientTrait;
 
-    const VERSION = '1.22.0';
+    const VERSION = '1.25.2';
 
     const FULL_CONTROL_SCOPE = 'https://www.googleapis.com/auth/devstorage.full_control';
     const READ_ONLY_SCOPE = 'https://www.googleapis.com/auth/devstorage.read_only';
@@ -89,12 +89,17 @@ class StorageClient
      *     @type int $retries Number of retries for a failed request.
      *           **Defaults to** `3`.
      *     @type array $scopes Scopes to be used for the request.
+     *     @type string $quotaProject Specifies a user project to bill for
+     *           access charges associated with the request.
      * }
      */
     public function __construct(array $config = [])
     {
         if (!isset($config['scopes'])) {
-            $config['scopes'] = [self::FULL_CONTROL_SCOPE];
+            $config['scopes'] = [
+                'https://www.googleapis.com/auth/iam',
+                self::FULL_CONTROL_SCOPE,
+            ];
         }
 
         $this->connection = new Rest($this->configureAuthentication($config) + [

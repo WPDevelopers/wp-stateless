@@ -15,7 +15,7 @@
     "firebase/php-jwt": "~2.0||~3.0||~4.0||~5.0",
     "monolog/monolog": "^1.17",
     "phpseclib/phpseclib": "~0.3.10||~2.0",
-    "guzzlehttp/guzzle": "~5.3.1||~6.0",
+    "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.0",
     "guzzlehttp/psr7": "^1.2"
   },
   "require-dev": {
@@ -24,8 +24,8 @@
     "symfony/dom-crawler": "~2.1",
     "symfony/css-selector": "~2.1",
     "phpcompatibility/php-compatibility": "^9.2",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-    "composer/composer": "^1.10"
+    "composer/composer": "^1.10",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
   },
   "suggest": {
     "cache/filesystem-adapter": "For caching certs and tokens (using Google_Client::setCache)"
@@ -38,6 +38,11 @@
   "extra": {
     "branch-alias": {
       "dev-master": "2.x-dev"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
   }
 }
